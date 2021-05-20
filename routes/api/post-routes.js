@@ -91,7 +91,7 @@ router.delete('/:id', (req, res) => {
       });
   });
 
-  Post.findAll({
+mPost.findAll({
     attributes: ['id', 'post_url', 'title', 'created_at'],
     order: [['created_at', 'DESC']], 
     include: [
@@ -100,4 +100,4 @@ router.delete('/:id', (req, res) => {
         attributes: ['username']
       }
     ]
-  })
+  });
